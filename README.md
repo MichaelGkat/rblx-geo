@@ -4,9 +4,9 @@ Simple module for fetching geolocation data about roblox servers
 
 **Methods:**
 
-**Geo.GetServerIP()** - *Returns the IP address of the current Roblox server.*
+Geo.GetServerIP() - *Returns the IP address of the current Roblox server.*
 
-**Geo.GetGeoData()** - *Returns the geolocation data associated with the server's IP.*
+Geo.GetGeoData() - *Returns the geolocation data associated with the server's IP.*
 
 **Steps:**
 
