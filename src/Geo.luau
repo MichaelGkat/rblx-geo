@@ -22,4 +22,24 @@ function Geo.GetServerIP(): string?
 
 end
 
+function Geo.GetGeoData(): {}?
+
+    local serverIP = Geo.GetServerIP()
+
+    if not serverIP then return end
+
+    local endpoint = StringUtils.FormatURL(Geo.GeolocationEndpoint, serverIP)
+
+    local successGET, data = pcall(HttpService.GetAsync, HttpService, endpoint)
+
+    if not successGET then warn("GetAsync failed") return end
+
+	local successDECODE, decodedData = pcall(HttpService.JSONDecode, HttpService, data) 
+
+	if not successDECODE then return end
+
+    return decodedData
+
+end
+
 return Geo
