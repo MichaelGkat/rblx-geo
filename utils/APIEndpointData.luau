@@ -1,6 +1,6 @@
 type APIEndpointData = {
 	APIName: string,
-	APIUrls: {[string]: string},
+	APIUrls: {[string]: {string}},
 }
 
 return {
