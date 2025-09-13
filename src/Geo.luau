@@ -36,7 +36,7 @@ function Geo.GetGeoData(): {}?
 
 	local successDECODE, decodedData = pcall(HttpService.JSONDecode, HttpService, data) 
 
-	if not successDECODE then return end
+    if not successDECODE then warn("JSONDecode failed") return end
 
     return decodedData
 
