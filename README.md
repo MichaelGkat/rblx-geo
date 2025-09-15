@@ -8,7 +8,7 @@ Geo.GetServerIP() - *Returns the IP address of the current Roblox server.*
 
 Geo.GetGeoData() - *Returns the geolocation data associated with the server's IP.*
 
-**Steps:**
+**How to use:**
 
 1. Require the Module
 
